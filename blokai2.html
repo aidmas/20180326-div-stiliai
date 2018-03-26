@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>"Blok div"</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        .container {
+            background-color: aquamarine;
+            width: 100vw;
+            height: 62.5vw;
+            margin-bottom: 2vw;
+        }
+
+        .rectangle {
+            background-color: blueviolet;
+            width: 60vw;
+            height: 25vw;
+            margin-bottom: 2vw;
+        }
+
+        .block {
+            background-color: blue;
+            width: 25vw;
+            height: 25vw;
+            margin-bottom: 2vw;
+        }
+
+        .stroked {
+            border: 1vw solid black;
+        }
+
+        .rectangle.block {
+            background-color: red;
+        }
+
+        .rectangle.stroked {
+            border: 0px;
+            background-color: yellow;
+        }
+
+        .rectangle:hover {
+            background-color: green;
+        }
+
+        :hover.block {
+            background-color: rgb(128, 83, 0);
+        }
+        p {
+            position: absolute;
+            top: auto;
+            right:2%;
+            font-weight: bold;
+            font-size: 3.5vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>container</p>
+        <div class="block">
+            <p>block</p>
+        </div>
+        <div class="block">
+            <p>block</p>
+        </div>
+    </div>
+    <div class="block stroked">
+        <p>block stroked</p>
+    </div>
+    <div class="rectangle">
+        <p>rectangle</p>
+        <div class="block">
+            <p>block</p>
+        </div>
+    </div>
+    <div class="rectangle stroked">
+        <p>rectangle stroked</p>
+    </div>
+</body>
+
+</html>
